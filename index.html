@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Bountiful Foods</title>
         <meta name="description" content="">
+        <link rel="icon" type="image/x-icon" href="./seedling.svg">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/medium.css">
@@ -13,7 +14,7 @@
         <header>
             <!-- Nav Bar -->
             <nav class="topnav" id="myTopnav">
-                <a href="./index.html" class="active"><h1>Bountiful Foods</h1></a>
+                <a href="./index.html" class="active"><h1><i class="fa-solid fa-seedling"></i> Bountiful Foods</h1></a>
                 <a href="./fresh.html">Fresh</a>
                 <a href="./about.html">About Us</a>
                 <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
@@ -37,30 +38,61 @@
 
             <!-- CTA Make your Drink -->
             <section id="cta" class="true-center">
-                <h2>Make your own drink!</h2>
+                <h2 class="bigger-h">Make your own drink!</h2>
                 <form action="./fresh.html">
                     <input class="btn btn-primary" type="submit" value="Get Started!">
                 </form>
             </section>
 
-            <!-- Drink Creation Count -->
-            <section>
-                <h2>Your drink creation total: <span id="drink-total"></span></h2>
-            </section>
+            <div id="div-double">
+                <!-- Drink Creation Count -->
+                <section id="drink-count" class="true-center">
+                    <h2 class="bigger-h"><i class="fa-solid fa-blender"></i> Your drink creation total: </h2>
+                    <br>
+                    <span id="drink-total" class="bigger-h"></span>
+                </section>
 
-            <!-- Weather Forecast -->
-            <section>
-                <h2>Weather</h2>
-            </section>
+                <!-- Weather Forecast -->
+                <section id="weather" class="true-center">
+                    <h2 class="bigger-h">Weather</h2>
+                    <div id="top-weath" class="true-center">
+                        <img src="https://via.placeholder.com/150" alt="placeholder" id="weath-img">
+                        <span class="bigger-h" id="temp"></span>
+                        <span id="conditions"></span>
+                    </div>
+                    <hr>
+                    <div id="bot-weath" class="row-center">
+                        <div id="day1" class="forecast">
+                            <p id="dOW1"></p>
+                            <p id="hi1" class="hi"></p>
+                            <p id="lo1" class="lo"></p>
+                        </div>
+                        <div id="day2" class="forecast">
+                            <p id="dOW2"></p>
+                            <p id="hi2" class="hi"></p>
+                            <p id="lo2" class="lo"></p>
+                        </div>
+                        <div id="day3" class="forecast">
+                            <p id="dOW3"></p>
+                            <p id="hi3" class="hi"></p>
+                            <p id="lo3" class="lo"></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
         </main>
         <footer>
             <!-- Social Media Links -->
-
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
             <!-- Contact Info -->
 
             <!-- Last Modified -->
         </footer>
         <script src="./scripts/index.js" async defer></script>
+        <script src="./scripts/weather.js" async defer></script>
         <script src="https://kit.fontawesome.com/47b9b913cf.js" crossorigin="anonymous"></script>
     </body>
 </html>

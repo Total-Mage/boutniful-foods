@@ -1,3 +1,15 @@
 @media (min-width:769px){
+    #div-double{
+        display: grid;
+        grid-template-areas: 
+        "count weath";
+    }
 
+    #drink-count{
+        grid-area:count;
+    }
+
+    #weather{
+        grid-area:weath;
+    }
 }

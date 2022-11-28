@@ -15,8 +15,7 @@
     margin: 0;
 }
 
-
-p, a{
+p, a, span{
     font-family: var(--p-font);
 }
 
@@ -35,6 +34,37 @@ main{
     flex-direction: column;
     text-align: center;
 }
+
+.row-center{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.bigger-h{
+    font-size: 4rem;
+}
+
+.btn{
+    background-color: var(--bg2);
+    padding: 1rem;
+    border: 1px var(--bg1);
+    margin: 10px;
+    border-radius: 6px;
+    font-family: var(--p-font);
+  }
+
+  .btn:hover{
+    background-color: var(--accent2);
+    cursor: pointer;
+    transition: 500ms;
+  }
+
+  .btn-primary{
+    font-size: 1.5rem;
+  }
 
 /* ----------------- Navigation ----------------- */
 header{
@@ -155,28 +185,76 @@ header{
 
   /* CTA Make your drink */
   #cta{
-    height:50vh;
+    height:100vh;
   }
 
-  #cta > h2{
-    font-size: 4rem;
+  /* Drink Count */
+  #drink-count{
+    height: 80vh;
+    background-color: var(--bg3);
+    color: white;
+    width:50vw; 
   }
 
-  .btn{
-    background-color: var(--bg2);
-    padding: 1rem;
-    border: 1px var(--bg1);
-    margin: 10px;
-    border-radius: 6px;
-    font-family: var(--p-font);
-  }
-
-  .btn:hover{
+  /* Weather */
+#weather{
+    height: 80vh;
     background-color: var(--accent2);
-    cursor: pointer;
-    transition: 500ms;
-  }
+    width: 50vw;
+}
 
-  .btn-primary{
-    font-size: 1.5rem;
-  }
+#weath-img{
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: -40px;
+}
+
+#temp{
+    float: inline-end;
+}
+
+#weather > hr{
+    width:50%;
+    margin: 15px auto;
+    color: var(--bg1);
+    border: 0;
+    height: 0;
+    border: none;
+    box-shadow: 0 0 0px 1px var(--bg2);
+}
+
+.forecast{
+  padding:20px;
+  margin: 10px;
+  background-color: var(--bg1);
+  border-radius: 25px;
+  font-weight: 800;
+
+}
+
+.forecast p{
+  line-height:1.5rem;
+}
+
+.hi{
+color:orangered;
+}
+
+.lo{
+  color:var(--bg3);
+}
+
+footer{
+    height:20vh;
+    color: black;
+}
+
+footer i{
+    color: var(--accent2);
+}
+
+footer i:hover{
+    color: var(--bg3);
+    transition: 500ms;
+}
