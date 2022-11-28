@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poiret+One&display=swap');
+
+:root{
+    --p-font: 'Open Sans', sans-serif;
+    --h-font: 'Poiret One', cursive;
+    --accent1: #83C5BE;
+    --accent2: #E29578;
+    --bg1: #EDF6F9;
+    --bg2: #FFDDD2;
+    --bg3: #006D77;
+
+}
