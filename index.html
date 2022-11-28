@@ -10,10 +10,57 @@
         <link rel="stylesheet" href="styles/medium.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <header>
+            <!-- Nav Bar -->
+            <nav class="topnav" id="myTopnav">
+                <a href="./index.html" class="active"><h1>Bountiful Foods</h1></a>
+                <a href="./fresh.html">Fresh</a>
+                <a href="./about.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <!-- Carlsbad Area Summary -->
+            <section id="area-sum">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./images/fruitbowl-620.webp" />
+                    <source media="(min-width: 601px)" srcset="./images/fruitbowl-960.webp" />
+                    <img src="./images/fruitbowl-960.webp" alt="two bowls of assorted fruits" id="hero-img"/>
+                </picture>
+                <h2>Carlsbad Area</h2>
+                <div class="true-center">
+                    <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach, backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach.</p>
+                </div>
+            </section>
+
+            <!-- CTA Make your Drink -->
+            <section id="cta" class="true-center">
+                <h2>Make your own drink!</h2>
+                <form action="./fresh.html">
+                    <input class="btn btn-primary" type="submit" value="Get Started!">
+                </form>
+            </section>
+
+            <!-- Drink Creation Count -->
+            <section>
+                <h2>Your drink creation total: <span id="drink-total"></span></h2>
+            </section>
+
+            <!-- Weather Forecast -->
+            <section>
+                <h2>Weather</h2>
+            </section>
+        </main>
+        <footer>
+            <!-- Social Media Links -->
+
+            <!-- Contact Info -->
+
+            <!-- Last Modified -->
+        </footer>
+        <script src="./scripts/index.js" async defer></script>
+        <script src="https://kit.fontawesome.com/47b9b913cf.js" crossorigin="anonymous"></script>
     </body>
 </html>
