@@ -41,7 +41,6 @@ function  displayResults(weatherData, curFor = "current") {
         // Get relevant API info
         const date = new Date();
         const today = date.getDay();
-        console.log(today);
 
         const hi1 = weatherData.daily[0].temp.max.toFixed(0);
         const hi2 = weatherData.daily[1].temp.max.toFixed(0);
@@ -80,7 +79,5 @@ function  displayResults(weatherData, curFor = "current") {
 
 }
 
-apiFetch(curURL);
+apiFetch(curURL, "current");
 apiFetch(forURL, "forecast");
-
-console.log(`Thursday it should say: ${dateToDay(1669933380000)}`);

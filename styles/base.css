@@ -66,6 +66,23 @@ main{
     font-size: 1.5rem;
   }
 
+  @media screen and (max-width: 600px) {
+    .true-center-sm{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+    
+    }
+
+    #div-double{
+      grid-template-areas: 
+      "count"
+      "weath";
+    }
+  }
+
 /* ----------------- Navigation ----------------- */
 header{
     position: relative;
@@ -190,6 +207,7 @@ header{
 
   /* Drink Count */
   #drink-count{
+    grid-area:count;
     height: 80vh;
     background-color: var(--bg3);
     color: white;
@@ -198,6 +216,7 @@ header{
 
   /* Weather */
 #weather{
+    grid-area:weath;
     height: 80vh;
     background-color: var(--accent2);
     width: 50vw;
@@ -243,6 +262,21 @@ color:orangered;
 
 .lo{
   color:var(--bg3);
+}
+
+@media screen and (max-width: 600px) {
+  #drink-count{
+    width:100vw;
+  }
+
+  #weather{
+    width: 100vw;
+  }
+
+  #weath-img{
+    width:100px;
+    margin: 0 auto;
+  }
 }
 
 footer{
