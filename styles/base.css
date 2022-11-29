@@ -320,6 +320,12 @@ header{
   100% { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
 }
 
+@media screen and (max-width: 600px) {
+  .bounce-blue, .bounce-orange{
+    animation: none;
+  }
+}
+
   /* Drink Count */
   #drink-count{
     grid-area:count;
