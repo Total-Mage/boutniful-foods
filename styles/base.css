@@ -27,6 +27,11 @@ main{
     overflow-x: hidden;
 }
 
+.logo{
+  width: 25px;
+  height: auto;
+}
+
 .true-center{
     display: flex;
     justify-content: center;
