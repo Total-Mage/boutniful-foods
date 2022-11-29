@@ -260,13 +260,13 @@ header{
     height: auto;
   }
 
-  #orange-smoothie{
+  #blue-smoothie{
     left: 40%;
     transform: translate(-50%, 0%);
     transform: rotate(40deg);
   }
 
-  #blue-smoothie{
+  #orange-smoothie{
     left: 40%;
     transform: translate(-50%, 0%);
     transform: rotate(-40deg);
@@ -277,7 +277,7 @@ header{
     animation-timing-function: ease;
   }
 
-  @keyframes bounce-orange {
+  @keyframes bounce-blue {
     10%  { transform: rotate(40deg) scale(1.1,.9) translate(0,0); }
     0%   { transform: rotate(40deg) scale(1,1)    translate(0,0); }
     30%  { transform: rotate(40deg) scale(.9,1.1) translate(-50px,-50px); }
@@ -292,7 +292,7 @@ header{
   animation-timing-function: ease;
 }
 
-@keyframes bounce-blue {
+@keyframes bounce-orange {
   0%   { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
   10%  { transform: rotate(-40deg) scale(1.1,.9) translate(0,0); }
   30%  { transform: rotate(-40deg) scale(.9,1.1) translate(50px,-50px); }
