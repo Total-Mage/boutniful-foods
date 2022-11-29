@@ -23,7 +23,9 @@ const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
     image.onload = () =>{
         image.removeAttribute('data-src');
-        image.className = "loaded";
+        if(image.getAttribute('id') != "orange-smoothie" && image.getAttribute('id') != "blue-smoothie"){
+          image.className = "loaded";
+        }
     };
 }
 // Check to see if Intersection Observer is supported

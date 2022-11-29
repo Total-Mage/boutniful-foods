@@ -77,6 +77,8 @@ main{
 
   .loaded {
     animation: fade-in 0.7s;
+    animation-iteration-count: 1;
+
     }
     
     @keyframes fade-in {
@@ -284,6 +286,7 @@ header{
   .bounce-orange{
     animation-name: bounce-orange;
     animation-timing-function: ease;
+
   }
 
   @keyframes bounce-blue {
@@ -299,6 +302,7 @@ header{
 .bounce-blue{
   animation-name: bounce-blue;
   animation-timing-function: ease;
+
 }
 
 @keyframes bounce-orange {
