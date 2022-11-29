@@ -123,6 +123,14 @@ header{
     display: none;
   }
 
+  #fresh:hover::after{
+    content:" 🍓";
+  }
+
+  #about:hover::after{
+    content:" 🗣️";
+  }
+
   @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {

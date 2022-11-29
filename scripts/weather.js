@@ -27,9 +27,13 @@ function  displayResults(weatherData, curFor = "current") {
         const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
         const desc = weatherData.weather[0].description;
         const captionDesc = document.getElementById('conditions');
+        const humidEl = document.getElementById('humid');
+        const humidAPI = weatherData.main.humidity;
+        console.log(humidAPI);
         const weathIMG = document.getElementById('weath-img');
         weathIMG.setAttribute('src', iconsrc);
         weathIMG.setAttribute('alt', desc);
+        humidEl.textContent = `Humidity: ${humidAPI}%` ;
         captionDesc.textContent = desc;
 
         weatherIcon.setAttribute('src', iconsrc);
