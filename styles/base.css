@@ -40,6 +40,7 @@ main{
   justify-content: center;
   align-content: center;
   flex-direction: row;
+  flex-wrap:wrap;
   text-align: center;
 }
 
@@ -64,6 +65,14 @@ main{
 
   .btn-primary{
     font-size: 1.5rem;
+  }
+
+  .drk-overlay{
+    background-color: rgba(0,109,119,0.5);
+    z-index: 2;
+    position: absolute;
+    width:100%;
+    height: 100%;
   }
 
   .loaded {
@@ -404,4 +413,53 @@ footer i:hover{
 
 .contact-foot{
   margin-bottom: 20px;
+}
+
+
+/* ---------------- About Us ---------------- */
+#history-txtbx{
+  background-color: #006D77;
+  color: white;
+  padding: 50px;
+}
+
+#our-story h2{
+  color: white;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+#contact{
+  background-color: var(--accent2);
+  padding: 5%;
+}
+
+#contact-container{
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  #gmap-container iframe{
+    height: 300px;
+    width: 300px;
+  }
+
+  #our-story > img, #our-story .drk-overlay {
+    display: none;
+  }
+
+  #our-story h2{
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #contact-container{
+    margin: 15px;
+  }
 }
