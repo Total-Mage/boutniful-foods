@@ -133,6 +133,10 @@ header{
     background-color: var(--bg3);
     color: white;
   }
+
+  .topnav a.inactive {
+    color: var(--bg3);
+  }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
