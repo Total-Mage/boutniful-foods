@@ -233,6 +233,56 @@ header{
     height:100vh;
   }
 
+  #orange-smoothie, #blue-smoothie{
+    position: absolute;
+    z-index: -1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+  }
+
+  #orange-smoothie{
+    left: 40%;
+    transform: translate(-50%, 0%);
+    transform: rotate(40deg);
+  }
+
+  #blue-smoothie{
+    left: 40%;
+    transform: translate(-50%, 0%);
+    transform: rotate(-40deg);
+  }
+
+  .bounce-orange{
+    animation-name: bounce-orange;
+    animation-timing-function: ease;
+  }
+
+  @keyframes bounce-orange {
+    10%  { transform: rotate(40deg) scale(1.1,.9) translate(0,0); }
+    0%   { transform: rotate(40deg) scale(1,1)    translate(0,0); }
+    30%  { transform: rotate(40deg) scale(.9,1.1) translate(-50px,-50px); }
+    50%  { transform: rotate(40deg) scale(1,1)    translate(0,0); }
+    57%  { transform: rotate(40deg) scale(1,1)    translate(-7px, -7px); }
+    64%  { transform: rotate(40deg) scale(1,1)    translate(0,0); }
+    100% { transform: rotate(40deg) scale(1,1)    translate(0,0); }
+}
+
+.bounce-blue{
+  animation-name: bounce-blue;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-blue {
+  0%   { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
+  10%  { transform: rotate(-40deg) scale(1.1,.9) translate(0,0); }
+  30%  { transform: rotate(-40deg) scale(.9,1.1) translate(50px,-50px); }
+  50%  { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
+  57%  { transform: rotate(-40deg) scale(1,1)    translate(7px,-7px); }
+  64%  { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
+  100% { transform: rotate(-40deg) scale(1,1)    translate(0,0); }
+}
+
   /* Drink Count */
   #drink-count{
     grid-area:count;
