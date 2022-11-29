@@ -170,11 +170,15 @@ header{
 #area-sum > h2{
     position: absolute;
     font-size: 3rem;
-    top: 10px;
+    top: 5px;
     left: 50%;
     transform: translate(-50%, 0%);
     color: white;
     z-index: 3;
+    background-color: var(--bg3);
+    box-shadow: 0 0 10px 2px var(--accent1);
+    padding:10px;
+    border-radius: 15px;
     text-shadow: 0px 0px 10px black;
 }
 
