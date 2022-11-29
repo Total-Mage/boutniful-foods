@@ -66,6 +66,22 @@ main{
     font-size: 1.5rem;
   }
 
+  .loaded {
+    animation: fade-in 0.7s;
+    }
+    
+    @keyframes fade-in {
+        from {
+            transform: scale(0.9);
+            border-radius: 100%;
+        }
+        to {
+            transform: scale(1);
+            border-radius: none;
+    
+        }
+    }
+
   @media screen and (max-width: 600px) {
     .true-center-sm{
       display: flex;
