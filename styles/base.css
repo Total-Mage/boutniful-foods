@@ -19,7 +19,7 @@ p, a, span{
     font-family: var(--p-font);
 }
 
-h1, h2, h3, h4, h5, h6, h1 a{
+h1, h2, h3, h4, h5, h6, h1 a, .like-head{
     font-family: var(--h-font);
 }
 
@@ -287,9 +287,12 @@ color:orangered;
   }
 }
 
+/* Footer */
+
 footer{
     height:20vh;
     color: black;
+    padding: 30px;
 }
 
 footer i{
@@ -299,4 +302,17 @@ footer i{
 footer i:hover{
     color: var(--bg3);
     transition: 500ms;
+}
+
+.social-links{
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.social-links a{
+  margin:10px;
+}
+
+.contact-foot{
+  margin-bottom: 20px;
 }
