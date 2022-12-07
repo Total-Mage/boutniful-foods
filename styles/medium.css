@@ -49,4 +49,34 @@
     #contact-container{
         margin: 15px;
     }
+
+/* Fruit Form */
+    .fruit-form{
+        display: grid;
+        grid-template-areas:
+        "head head"
+        "form img"
+        "output output";
+        margin: 0 10%;
+    }
+
+    .fruit-form > h2{
+        grid-area: head;
+    }
+
+    .fruit-form > form{
+        grid-area: form;
+    }
+
+    .fruit-form > img{
+        width: 100%;
+        height: auto;
+        grid-area: img;
+        border-radius: 15px;
+        float:right;
+    }
+
+    .fruit-form > #form-output{
+        grid-area: output;
+    }
 }

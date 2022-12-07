@@ -25,8 +25,37 @@
                 </a>
             </nav>
         </header>
-        <main class="true-center">
-            <img src="./images/not-ready-selena-gomez.gif" alt="">
+        <main>
+            <section class="true-center-sm fruit-form">
+                <h2 id="form-head" class="bigger-h">Make a Drink!</h2>
+                <form id="mix-form">
+                    <input type="date" name="date" hidden id="date">
+                    <label for="fName">First Name<span class="req-f">*</span> <br>
+                        <input name="fName" type="text" class="input-box" id='fName' required>
+                    </label>
+                    <label for="email">Email<span class="req-f">*</span><br>
+                        <input name="email" type="email" id="email" class="input-box" required>
+                    </label>
+                    <label for="phone">Phone Number<span class="req-f">*</span><br>
+                        <input name="phone" type="tel" id="phone" class="input-box" required>
+                    </label>
+                    <div id="fruit-selector">
+                        <p>Select up to 3 fruits:</p>
+
+                    </div>
+                    <label for="add-instructions"></label> <p>Special requests</p> 
+                    <textarea name="add-instructions" id="add-instructions" cols="30" rows="10" class="input-box"></textarea> <br>
+                    <input type="button" value="Mix it Up!" class="btn-alt btn" id="mix-btn">
+                </form>
+                <img src="./images/placeholder.png" alt="smoothie" data-src="./images/form-smoothie.jpg" id="form-img">
+                <section id="form-output" class="true-center">
+                    <h2 class="bigger-h">Output</h2>
+                    <div id="output">
+                        <p>Please create a drink to see the nutrients it contains</p>
+                    </div>
+                </section>
+            </section>
+            
         </main>
         <footer class="true-center">
             <!-- Social Media Links -->
@@ -45,8 +74,8 @@
             <p>Last Modified: <span class="last-modified"></span></p>
         </footer>
         <script src="./scripts/lazy.js" async defer></script>
-        <script src="./scripts/index.js" async defer></script>
-        <script src="./scripts/cache.js" async defer></script>
+        <script src="./scripts/mod-ham.js" async defer></script>
+        <script src="./scripts/fresh.js" async defer></script>
         <script src="https://kit.fontawesome.com/47b9b913cf.js" crossorigin="anonymous"></script>
     </body>
 </html>
